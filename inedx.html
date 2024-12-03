@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT Cycling Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AIT Cycling Club</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x600?text=Cycling+Event+1" alt="Cycling Event 1">
+                <div class="caption">Join Our Annual Cycling Race!</div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x600?text=Cycling+Event+2" alt="Cycling Event 2">
+                <div class="caption">Enjoy Weekend Trail Rides</div>
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/1200x600?text=Cycling+Event+3" alt="Cycling Event 3">
+                <div class="caption">Family Cycling Fun Day</div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>The AIT Cycling Club is a vibrant community dedicated to cycling enthusiasts of all levels. We organize various events, rides, and provide a platform for members to connect and share their passion for cycling. Join us and be part of an active and friendly community.</p>
+        <div class="team">
+            <div class="member">
+                <img src="https://via.placeholder.com/200?text=Member+1" alt="Member 1">
+                <h3>John Doe</h3>
+                <p>Founder & Lead Organizer</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/200?text=Member+2" alt="Member 2">
+                <h3>Jane Smith</h3>
+                <p>Event Coordinator</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/200?text=Member+3" alt="Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Marketing Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="container">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event">
+                <h3>Annual Cycling Race</h3>
+                <p>Date: September 15, 2024</p>
+                <p>Location: Central Park</p>
+                <p>Description: A thrilling race through the scenic Central Park. Open to all levels.</p>
+            </div>
+            <div class="event">
+                <h3>Weekend Trail Rides</h3>
+                <p>Date: Every Saturday at 8 AM</p>
+                <p>Location: Riverside Trail</p>
+                <p>Description: Enjoy a group ride through the beautiful Riverside Trail. All skill levels welcome.</p>
+            </div>
+            <div class="event">
+                <h3>Family Cycling Day</h3>
+                <p>Date: October 5, 2024</p>
+                <p>Location: Greenfield Park</p>
+                <p>Description: A fun day for the whole family with various cycling activities and games.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/400?text=Gallery+1" alt="Gallery 1">
+            <img src="https://via.placeholder.com/400?text=Gallery+2" alt="Gallery 2">
+            <img src="https://via.placeholder.com/400?text=Gallery+3" alt="Gallery 3">
+            <img src="https://via.placeholder.com/400?text=Gallery+4" alt="Gallery 4">
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AIT Cycling Club. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/30?text=FB" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/30?text=TW" alt="Twitter"></a>
+                <a href="#"><img src="https://via.placeholder.com/30?text=IG" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
